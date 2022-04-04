@@ -14,6 +14,6 @@ func main() {
 	conn.SetWriteDeadline(time.Now().Add(time.Second * 10))
 
 	//write something
-	conn.WriteMessages(kafka.Message{Value: []byte("Hi Kafka again")})
+	conn.WriteMessages(kafka.Message{Value: []byte("Message from me")})
 
 }
